@@ -10,7 +10,8 @@ const deleteAllButton = document.querySelector(".deleteAll-button");
 
 let database = [];
 
-const updateDatabase = (database) => localStorage.setItem("todo-list", JSON.stringify(database));
+const updateDatabase = (database) =>
+  localStorage.setItem("todo-list", JSON.stringify(database));
 const getDatabase = () => JSON.parse(localStorage.getItem("todo-list")) ?? [];
 
 const validateInput = () => inputElement.value.trim().length > 0;
@@ -26,6 +27,7 @@ const insertTask = (taskText, status, index) => {
   const taskItem = document.createElement("div");
   taskItem.classList.add("task-item");
   taskItem.setAttribute("id", `index-${index}`);
+  console.log(status);
   if (status !== "") {
     taskItem.style.backgroundColor = "var(--tertiary-color)";
   }
@@ -71,8 +73,9 @@ const barTasks = (chekeds, total) => {
   let barColor =  100 / (total / chekeds);
   barContent.style.width = barColor + "%";
   if (barColor <= 100) barContent.style.backgroundColor = "var(--checked-color)";
-  if (barColor <= 50) barContent.style.backgroundColor = "var(--caution-color)";
-  if (barColor <= 25) barContent.style.backgroundColor = "var(--danger-color)";
+  if (barColor <= 50) barContent.style.backgroundColor = "var(--checked-color)";
+  if (barColor <= 25) barContent.style.backgroundColor = "var(--checked-color)";
+  barContent.style.backgroundColor = bar;
 };
 
 const addTask = () => {
@@ -133,7 +136,7 @@ const deleteTask = (index) => {
 };
 
 addTaskButton.addEventListener("click", addTask);
-inputElement.addEventListener("keydown", (event) => {
+window.addEventListener("keydown", (event) => {
   if (event.key === "Enter") addTask();
 });
 
@@ -145,24 +148,6 @@ const deleteAllTasks = () => {
     displayTasks();
   }
 };
-
-const updateTask = (index) => {
-  const taskInput = document.querySelector(`.task-item#index-${index} .task input[type='text']`)
-  const hasReadOnly = taskInput.readOnly;
-  if (hasReadOnly) {
-    taskInput.readOnly = false;
-    taskInput.value = ''
-    taskInput.focus();
-    taskInput.addEventListener('change', () => {
-      let newTaskText = taskInput.value
-      database = getDatabase();
-      database[index].taskText = newTaskText
-      updateDatabase(database);
-      taskInput.readOnly = true;
-    })
-  }
-
-}
 
 tasksContainer.addEventListener("click", clickTaskItem);
 inputElement.addEventListener("input", inputChange);
