@@ -1,8 +1,3 @@
-
-<h4 align="center">
-  <img src="./public/todo-list-logo.png" alt="logo" height="75"/>
-</h4>
-
 <h1 align="center">
   Todo List App
 </h1>
