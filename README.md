@@ -1,6 +1,6 @@
 
 <h4 align="center">
-  <img src="./public/todo-list-logo.png" alt="logo" height="75"/>
+  <img src="./public/todo-list-logo.png" alt="logo" height="175"/>
 </h4>
 
 <h1 align="center">
