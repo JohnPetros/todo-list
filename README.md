@@ -27,8 +27,7 @@ Projeto web de um to do list, que é uma aplicação que permite adicionar taref
     <img width="750" alt="GIF demontrando o Rocketblog" src=".github/todo-list.gif" />
 </div>
 
----
-<br>
+<hr>
 
 ## ✨ Funcionalidades
 - [x] Adicionar tarefa
