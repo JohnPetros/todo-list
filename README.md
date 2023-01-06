@@ -20,7 +20,7 @@
 
 ## 💻 Projeto
 
-Projeto web de um to do list, que é uma aplicação que permite adicionar tarefas do dia a dia com o objetivo de organizar melhor o cotidiano do usuário. Esse projeto foi desenvolvido com intuito de praticar a manipulação do DOM com JavaScript
+Projeto web de um **to do list**, que é uma aplicação que permite adicionar tarefas do dia a dia com o objetivo de organizar melhor o cotidiano do usuário. Esse projeto foi desenvolvido com intuito de praticar a manipulação do DOM com JavaScript
 
 ### Demonstração
 <div align="center">
@@ -101,4 +101,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Feito com 💜 by John Petros 👋🏻
+<p align="center">
+   Feito com 💜 by John Petros 👋🏻
+</p>
