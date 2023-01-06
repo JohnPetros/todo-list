@@ -30,12 +30,12 @@ Projeto web de um to do list, que é uma aplicação que permite adicionar taref
 <br>
 
 ## ✨ Funcionalidades
-[x] Adicionar tarefa
-[x] Checkar tarefa
-[x] Editar tarefa
-[x] Excluir todas ou uma tarefa específica
-[x] Exibir progresso da realização das tarefas adicionadas em forma de porcentagem e barra de progresso
-[x] Armazenar tarefas no local Storage do navegador
+- [x] Adicionar tarefa
+- [x] Checkar tarefa
+- [x] Editar tarefa
+- [x] Excluir todas ou uma tarefa específica
+- [x] Exibir progresso da realização das tarefas adicionadas em forma de porcentagem e barra de progresso
+- [x] Armazenar tarefas no local Storage do navegador
 ---
 <br>
 
