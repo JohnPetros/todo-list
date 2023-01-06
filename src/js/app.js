@@ -67,9 +67,13 @@ const displayTasks = () => {
 };
 
 const barTasks = (chekeds, total) => {
-  total > 0
-    ? (barAndDeleteButton.style.opacity = 1)
-    : (barAndDeleteButton.style.opacity = 0);
+  if (total > 0) {
+    barAndDeleteButton.style.opacity = 1;
+    barAndDeleteButton.style.pointerEvents = "all";
+  } else {
+    barAndDeleteButton.style.opacity = 0;
+    barAndDeleteButton.style.pointerEvents = "none";
+  }
   bartext.textContent = `${chekeds} das ${total} tarefas concluídas`;
   let barColor = 100 / (total / chekeds);
   barContent.style.width = barColor + "%";

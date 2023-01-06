@@ -22,10 +22,12 @@
 
 Projeto web de um to do list, que é uma aplicação que permite adicionar tarefas do dia a dia com o objetivo de organizar melhor o cotidiano do usuário. Esse projeto foi desenvolvido com intuito de praticar a manipulação do DOM com JavaScript
 
-## ✅ Demonstração
-![2022-08-03 (1)](https://user-images.githubusercontent.com/93893533/182709735-f9f2742e-9be7-44fd-9482-e624a8626563.png)
-
-<hr>
+### Demonstração
+<div align="center">
+    <img width="750" alt="GIF demontrando o Rocketblog" src=".github/todo-list.gif" />
+</div>
+---
+<br>
 
 ## ✨ Funcionalidades
 [x] Adicionar tarefa

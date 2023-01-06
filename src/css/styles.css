@@ -27,13 +27,15 @@ body {
     var(--background-color) 0%,
     var(--secondary-color) 100%
   );
+  overflow: hidden;
 }
 
 .todo-list-container {
   background-color: #fff;
-  width: 40%;
-  min-width: 500px;
-  padding: 10px 30px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh;
+  padding: 10px 25px;
   margin: 70px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.578);
 
@@ -90,6 +92,14 @@ body {
 .tasks-container {
   width: 100%;
   overflow-y: auto;
+}
+
+.tasks-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+  background-color: var(--icon-color);
 }
 
 .task-item {
